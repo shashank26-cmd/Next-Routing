@@ -8,7 +8,7 @@ const page = () => {
       <div className="row">
         <div className="col-md-6">
           <h2>About Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, velit eget tristique viverra, mauris nulla vehicula justo, sit amet aliquam leo.</p>
+          <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, velit eget tristique viverra, mauris nulla vehicula justo, sit amet aliquam leo.</p>
           <p>Nullam in felis sit amet purus accumsan consequat. Cras non dui eu dui lacinia congue. Integer dapibus metus quis justo vestibulum, at ultricies mi vulputate.</p>
           <p>Donec in massa et leo gravida condimentum. Sed auctor eget nisl eget blandit. Vestibulum at tincidunt libero, id venenatis libero.</p>
         </div>

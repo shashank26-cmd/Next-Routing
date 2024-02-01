@@ -5,7 +5,8 @@ import Footer from "./Footer/Footer";
  import ErrorPage from "../not-found";
 
 const ComponentProvider =({children })=>{
-const data=usePathname();
+const data=usePathname(); // ise aone ko path milta hai 
+
 return (
     <>
     {
