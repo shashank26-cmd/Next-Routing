@@ -10,7 +10,7 @@ const data=usePathname(); // ise aone ko path milta hai
 return (
     <>
     {
-        data=='/About' || data=="/Start" || data=="/MyProfile" || data=="/" || data=="/Contact" ?
+        data=='/About' || data=="/Start" || data=="/MyProfile" || data=="/" || data=="/Contact" || data=="/GalleryList" || data=="/Gallex/:id"   ?
          <>
          <Navbar />
          {children}

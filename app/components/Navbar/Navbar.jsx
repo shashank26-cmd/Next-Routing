@@ -25,7 +25,7 @@ const Navbar = () => {
 
         <div
           className="offcanvas offcanvas-end"
-          tabindex="-1"
+          tabIndex="-1"
           id="offcanvasRight"
           aria-labelledby="offcanvasRightLabel"
         >
@@ -130,6 +130,16 @@ const Navbar = () => {
               >
                 Contact
               </a>
+            </li>
+            <li className="nav-item mx-auto"data-bs-dismiss="offcanvas"
+              aria-label="Close">
+              <Link href="/GalleryList"
+
+                className="nav-link active text-light"
+                aria-current="page"
+              >
+                data
+              </Link>
             </li>
           </ul>
         </div>
