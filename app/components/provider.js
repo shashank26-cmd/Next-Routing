@@ -5,12 +5,12 @@ import Footer from "./Footer/Footer";
  import ErrorPage from "../not-found";
 
 const ComponentProvider =({children })=>{
-const data=usePathname(); // ise aone ko path milta hai 
+const data=usePathname(); 
 
 return (
     <>
     {
-        data=='/About' || data=="/Start" || data=="/MyProfile" || data=="/" || data=="/Contact" || data=="/GalleryList" || data=="/Gallex/:id"   ?
+        data=='/About' || data=="/Start" || data=="/MyProfile" || data=="/" || data=="/Contact" || data=="/GalleryList" || data.startsWith("/GalleryList/")?
          <>
          <Navbar />
          {children}

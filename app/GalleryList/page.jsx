@@ -2,8 +2,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Gallex from "../Gallex/page";
+import Search from "../Search/page"
+import NoProduct from "../NoProduct/page"
 
 const GalleryList = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const [gallery, setGallery] = useState([]);
 
   const getList = async () => {
@@ -21,13 +25,22 @@ const GalleryList = () => {
   }, []);
 
   return (
+
    <>
+
+  
       <h1 className='text-center mt-5'>Gallex</h1>
+
+      <Search  updatesearch={setSearchTerm} />
+      { (!searchTerm) ? <NoProduct />  : }
+
+
+
 
 
 <div className="d-flex flex-wrap p-4 justify-content-center">  
 
-        {gallery.map((item) => (
+        {gallery?.map((item) => (
           <div className="col-md-3   mb-4"
           key={item.id}>
             <Gallex
